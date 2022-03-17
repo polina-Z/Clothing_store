@@ -116,6 +116,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 80px;
+  min-height: 85vh;
 }
   
 .homepage .directory-menu {
@@ -123,7 +124,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} 
 
 .directory-menu .menu-item {
   min-width: 30%;
@@ -202,7 +203,7 @@
   height: 60px;
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  margin-top: -60px;
   left: 0;
   justify-content: space-between;
 }
@@ -351,14 +352,15 @@ input:checked + .slider:before {
 /*SIG IN PAGE*/
 
 .sign-in-and-sign-up {
-  width:  950px;
+  width:  90%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 30px auto;
+  min-height: 85vh;
 }
 
 .sign-in {
-  width: 430px;
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -369,13 +371,17 @@ input:checked + .slider:before {
 
 .sign-in .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.sign-in .buttons .custom-button {
+  margin-right: 30px;
 }
 
 .sign-up {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 40%;
 }
 
 .sign-up .title {
@@ -508,15 +514,6 @@ input[type='password'] {
   margin-bottom: 90px;
 }
 
-.shoppage-footer {
-  height: 60px;
-  width: 100%;
-  position: absolute;
-  margin-top: -60px;
-  left: 0;
-  justify-content: space-between;
-}
-
 .collection-page {
   display: flex;
   flex-direction: column;
@@ -547,7 +544,7 @@ input[type='password'] {
 
 .checkout-page {
   width: 55%;
-  min-height: 90vh;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -621,4 +618,37 @@ input[type='password'] {
 .checkout-item .remove-button {
   padding-left: 12px;
   cursor: pointer;
+}
+
+
+@media (orientation: portrait) and (max-width: 1000px) {
+  .directory-menu .menu-item {
+    height: 20vh;
+    width: 90%;
+    min-width: none;
+    margin-bottom: 60px;
+  }
+
+  .homepage .directory-menu {
+    flex-direction: column;
+    margin-bottom: 90px;
+  }
+
+  .sign-in-and-sign-up {
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+  }
+
+  .sign-in {
+    width: 90%;
+    margin-bottom: 250px;
+  }
+
+  .sign-up {
+    width: 90%;
+    margin-bottom: 90px;
+  }
 }
