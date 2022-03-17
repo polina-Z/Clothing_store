@@ -124,6 +124,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 90px;
 } 
 
 .directory-menu .menu-item {
@@ -382,6 +383,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-bottom: 90px;
 }
 
 .sign-up .title {
@@ -517,6 +519,7 @@ input[type='password'] {
 .collection-page {
   display: flex;
   flex-direction: column;
+  min-height: 85vh;
 }
 
 .collection-page .title {
