@@ -655,3 +655,10 @@ input[type='password'] {
     margin-bottom: 90px;
   }
 }
+
+@media (orientation: landscape) {
+  .homepage .directory-menu {
+    margin-bottom: 90px;
+  }
+}
+
