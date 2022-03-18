@@ -473,9 +473,9 @@ input[type='password'] {
   position: relative;
 }
 
-.collection-items .image {
+.collection-item .image {
   width: 100%;
-  height: 95%;
+  height: 93%;
   object-fit: cover;
   margin-bottom: 5px;
 }
@@ -497,9 +497,9 @@ input[type='password'] {
   display: flex;
 }
 
-.collection-items .collection-footer {
+.collection-item .collection-footer {
   width: 90%;
-  height: 5%;
+  height: 7%;
   display: flex;
   justify-content: space-between;
   font-size: 18px;
